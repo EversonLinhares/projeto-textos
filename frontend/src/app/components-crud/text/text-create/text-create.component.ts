@@ -10,8 +10,8 @@ import { Text } from './../text.model';
 export class TextCreateComponent implements OnInit {
 
   text: Text = {
-       title: 'Titulo Teste',
-       text: 'Olá estamos testando'
+       title: '',
+       text: ''
   }
 
   constructor(private textService: TextService,
@@ -23,9 +23,12 @@ export class TextCreateComponent implements OnInit {
   createText(): void{
     this.textService.create(this.text)
          .subscribe(() => {
-           this.textService.showMessage("Text Criado")
-           this.router.navigate(['/texts'])
-         })
+           this.textService.showMessage("Texto criado com sucesso!")
+          })
+          setTimeout(()=>{
+            this.router.navigate(['/texts'])
+           },2500)
+
 
   }
   

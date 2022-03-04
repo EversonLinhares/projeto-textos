@@ -1,5 +1,6 @@
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +26,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { TextReadComponent } from './components-crud/text/text-read/text-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { TextUpdateComponent } from './components-crud/text/text-update/text-update.component';
+import { TextDeleteComponent } from './components-crud/text/text-delete/text-delete.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -35,6 +45,9 @@ import { MatInputModule } from '@angular/material/input';
     HomeComponent,
     CrudTextsComponent,
     TextCreateComponent,
+    TextReadComponent,
+    TextUpdateComponent,
+    TextDeleteComponent,
     
     
   ],
@@ -51,9 +64,14 @@ import { MatInputModule } from '@angular/material/input';
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

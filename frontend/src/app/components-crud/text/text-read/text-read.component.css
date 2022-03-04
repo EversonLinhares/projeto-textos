@@ -1,0 +1,16 @@
+table{
+    width: 100%;
+}
+.thColor{
+    background-color: rgb(100,149,237);
+}
+.edit{
+    margin-right: 8px;
+}
+
+.edit >i {
+    color: rgb(214, 203, 102);
+}
+.delete > i{
+    color: rgb(190, 42, 31);
+}

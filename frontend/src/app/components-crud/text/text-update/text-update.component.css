@@ -1,0 +1,15 @@
+.myTextArea{
+    border-radius: 10px;
+    height: auto!important;
+    width: 50%;
+     
+ }
+ form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+ }
+ 
+ button{
+     margin: 10px 10px 0 0;
+ }

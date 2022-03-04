@@ -1,10 +1,10 @@
 <mat-card>
-    <mat-card-title>Novo Texto</mat-card-title>
+    <mat-card-title>Alterar Texto</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Titulo" [(ngModel)]="text.title" name="title">
+           <input matInput placeholder="Titulo" [(ngModel)]="text.title" name="title"> 
         </mat-form-field>
-        <textarea class="myTextArea"  cols="30" rows="10" placeholder=" Digite aqui o seu texto..." [(ngModel)]="text.text" name="text"></textarea>
+        <textarea class="myTextArea"  cols="30" rows="10" placeholder=" Digite aqui o seu texto..." [(ngModel)]="text.text" name="text"></textarea> 
         <!-- <mat-form-field>
             <textarea  matInput placeholder="Digite aqui o seu texto..."  
             cdkAutosizeMinRows="10" >
@@ -12,8 +12,8 @@
           </mat-form-field>  -->
         
     </form>
-    <button mat-raised-button  (click)="createText()" color="primary">
-        Salvar
+    <button mat-raised-button  (click)="updateText()" color="primary">
+        Alterar
     </button>
     
     <button mat-raised-button (click)="cancelText()">
