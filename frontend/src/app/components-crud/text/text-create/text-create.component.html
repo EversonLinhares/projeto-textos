@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>Novo Texto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Titulo"
+                >
+        </mat-form-field>
+        <br/>
+        <textarea class="myTextArea"  cols="30" rows="10" placeholder=" Digite aqui o seu texto..."></textarea>
+        <!-- <mat-form-field>
+            <textarea  matInput placeholder="Digite aqui o seu texto..."  
+            cdkAutosizeMinRows="10" >
+            </textarea>
+          </mat-form-field>  -->
+        
+    </form>
+    <button mat-raised-button  (click)="createText()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancelText()">
+        Cancelar
+    </button>
+</mat-card>
+

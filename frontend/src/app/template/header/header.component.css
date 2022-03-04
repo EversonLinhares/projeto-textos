@@ -1,0 +1,14 @@
+.header .title{
+    padding-left: 10px;
+}
+.header .title i {
+    padding: 5px;
+}
+.header{
+   /* background-color: rgb(150, 150, 150); */
+    background-color: rgb(100,149,237);
+   /* background-color: lightskyblue;  */
+}
+.mid{
+    vertical-align: middle;
+}
