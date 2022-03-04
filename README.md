@@ -1,2 +1,2 @@
-# projeto-textos
+# app-notes
 Criação de textos
